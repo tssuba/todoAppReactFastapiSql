@@ -117,7 +117,7 @@ const LeadModal = ({ active, handleModal, token, id, setErrorMessage }) => {
               </div>
             </div>
             <div className="field">
-              <label className="label">To-do</label>
+              <label className="label">Task</label>
               <div className="control">
                 <input
                   type="text"
