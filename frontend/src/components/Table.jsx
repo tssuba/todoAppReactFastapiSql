@@ -34,6 +34,22 @@ const Table = () => {
     getLeads();
   };
 
+  const handleDeleteAll = async (id) => {
+    const requestOptions = {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + token,
+      },
+    };
+    const response = await fetch(`/api/leads/`, requestOptions);
+    if (!response.ok) {
+      setErrorMessage("Failed to delete all leads");
+    }
+
+    getLeads();
+  };
+
   const getLeads = async () => {
     const requestOptions = {
       method: "GET",
@@ -76,6 +92,12 @@ const Table = () => {
         onClick={() => setActiveModal(true)}
       >
         Create Task
+      </button>
+      <button
+        className="button is-fullwidth mb-5 is-danger"
+        onClick={() => handleDeleteAll()}
+      >
+        Delete all tasks
       </button>
       <ErrorMessage message={errorMessage} />
       {loaded && leads ? (
