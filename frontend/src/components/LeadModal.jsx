@@ -105,7 +105,7 @@ const LeadModal = ({ active, handleModal, token, id, setErrorMessage }) => {
         <section className="modal-card-body">
           <form>
             <div className="field">
-              <label className="label">Company</label>
+              <label className="label">Location</label>
               <div className="control">
                 <input
                   type="text"
@@ -117,7 +117,7 @@ const LeadModal = ({ active, handleModal, token, id, setErrorMessage }) => {
               </div>
             </div>
             <div className="field">
-              <label className="label">Note</label>
+              <label className="label">To-do</label>
               <div className="control">
                 <input
                   type="text"
