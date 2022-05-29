@@ -113,6 +113,12 @@ async def delete_lead(lead_id: int, user: _schemas.User, db: _orm.Session):
     db.delete(lead)
     db.commit()
 
+async def delete_all(user: _schemas.User, db: _orm.Session):
+    lead = db.query(_models.Lead).filter_by(owner_id=user.id)
+
+    lead.delete()
+    db.commit()
+
 async def update_lead(lead_id: int, lead: _schemas.LeadCreate, user: _schemas.User, db: _orm.Session):
     lead_db = await _lead_selector(lead_id, user, db)
 
