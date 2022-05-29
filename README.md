@@ -4,7 +4,12 @@ Using React, FastAPI, and SQLite
 
 ## Description
 
-To-do (pun intended)
+* Simple To-do Application
+* User can create, update, and delete to-dos and also collectively delete all
+* Audit columns present
+* Additional Authentication module thanks to the references listed below
+* API has CRUD endpoints to GET, UPDATE, DELETE specific, and all /todo/{id} , referred to as leads in the API
+* Additionally, I have also hosted the backend on heroku and the frontend on netlify, accessible on the domain https://app.tanmaysuba.com/
 
 ## Getting Started
 
@@ -16,6 +21,8 @@ To-do (pun intended)
 * SQLAlchemy (pip3 package)
 * pyjwt (pip3 package)
 * passlib[bcrypt] (pip3 package)
+* bulma (npm)
+* moment (npm)
 
 ### Run it Locally
 
@@ -29,3 +36,11 @@ uvicorn main:app --reload
 ```sh
 npm start
 ```
+
+### References
+
+* Stackoverflow
+* SQLAlchemy docs
+* Google
+* Youtube
+* Backend based on https://www.youtube.com/c/rithmics
