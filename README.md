@@ -11,6 +11,8 @@ To-do (pun intended)
 ### Dependencies
 
 * React
-* FastAPI
+* FastAPI (pip3 package)
 * SQLite
-* SQLAlchemy
+* SQLAlchemy (pip3 package)
+* pyjwt (pip3 package)
+* passlib[bcrypt] (pip3 package)
