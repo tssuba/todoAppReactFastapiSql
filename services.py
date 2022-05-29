@@ -132,5 +132,6 @@ async def update_lead(lead_id: int, lead: _schemas.LeadCreate, user: _schemas.Us
     db.commit()
     db.refresh(lead_db)
 
+
     return _schemas.Lead.from_orm(lead_db)
 

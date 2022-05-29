@@ -96,3 +96,4 @@ async def update_lead(
 @app.get("/api")
 async def root():
     return {"message": "Tanmay's To-do App"}
+
